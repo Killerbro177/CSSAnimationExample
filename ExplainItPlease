@@ -1,0 +1,129 @@
+/*
+The shake CSS animation was grabbed/modified from here: https://alienmelon.itch.io/allthemes
+
+How to use:
+
+If you want to use a CSS animation inline with the rest of the text, like how it works in this example- 
+all sections of your text should be inline-block, otherwise, it'll create a newline.
+
+I looked at a million different explainations for this and it was nowhere to be found- so this is how you do it.
+
+
+Animations can be started in 2 ways.
+------*/
+@keyframes NameItSomething
+  from {CSSElement: attribute }
+  to {CSSElement: attribute}
+/*
+------
+OR
+------
+*/
+@keyframes NextName
+  0% {CSSElement: attribute }
+  35% {CSSElement: attribute }
+  100% {CSSElement: attribute }
+/*
+------
+then, make the class for it, normal CSS style.
+------
+*/
+.ClassName{
+	animation-name: NewName;
+	animation-timing-function: /*Linear, ease, ease-in-out... I use linear mostly, but you can exparament.*/ linear;
+	animation-duration: /*Time in seconds*/ 3s;
+	animation-iteration-count: /*infinite or amount of times*/ infinite;
+}
+/*
+------
+Say you want to do an animation letter by letter, and you don't know Javascript.
+Easy, but you'll make your code look like spagetti.
+------
+*/
+.EncapsulatingClassName div{/*This will target every DIV under the HTML tagged with the class name*/
+	animation-name: NewName;
+	animation-timing-function: linear; 
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	display: inline-block;
+}
+/*
+This Is a normal animation, but the confusing thing comes after.
+This next bit of code selects every section individually, and animates it under a delay, so each of them animate in a line.
+1n starts from the right side, and each n is each div under 'EnapsulatingClassName'
+Adding an animation element here will add that element in place of.
+thus, 
+adding animation-duration: 4s; will make the animation take 4 seconds instead of 3.
+*/
+
+.EncapsulatingClassName  div:nth-last-child(1n){
+	animation-delay: 0.1s;
+}
+.EncapsulatingClassName  div:nth-last-child(2n){
+	animation-delay: 0.2s;
+}
+.EncapsulatingClassName  div:nth-last-child(3n){
+	animation-delay: 0.3s;
+}
+.EncapsulatingClassName  div:nth-last-child(4n){
+	animation-delay: 0.4s;
+}
+.EncapsulatingClassName  div:nth-last-child(5n){
+	animation-delay: 0.5s;
+}
+.EncapsulatingClassName  div:nth-last-child(6n){
+	animation-delay: 0.6s;
+}
+.EncapsulatingClassName  div:nth-last-child(7n){
+	animation-delay: 0.7s;
+}
+.EncapsulatingClassName  div:nth-last-child(8n){
+	animation-delay: 0.8s;
+}
+.EncapsulatingClassName  div:nth-last-child(9n){
+	animation-delay: 0.9s;
+}
+.EncapsulatingClassName  div:nth-last-child(10n){
+	animation-delay: 1s;
+}
+.EncapsulatingClassName  div:nth-last-child(11n){
+	animation-delay: 1.1s;
+}
+.EncapsulatingClassName  div:nth-last-child(12n){
+	animation-delay: 1.2s;
+}
+.EncapsulatingClassName  div:nth-last-child(13n){
+	animation-delay: 1.3s;
+}
+.EncapsulatingClassName  div:nth-last-child(14n){
+	animation-delay: 1.4s;
+}
+.EncapsulatingClassName  div:nth-last-child(15n){
+	animation-delay: 1.5s;
+}
+.EncapsulatingClassName  div:nth-last-child(16n){
+	animation-delay: 1.6s;
+}
+
+/*
+I've seen people use the a tag instead of Div, but... i mean, go to any website ever and see
+*/
+
+
+
+
+
+
+
+
+/*You might be able to copy-paste this to mess around with it...*/
+@keyframes NewName{
+	0% {color: red;}
+	14% {color: orange;}
+	28% {color: yellow;}
+	42% {color: greenyellow;}
+	56% {color: deepskyblue;}
+	70% {color: indigo;}
+	84% {color: violet;}
+	100%{color: red;}
+}
