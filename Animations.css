@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+	.center{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1500px;
+
+		text-align: left;
+		background-color: #B7B7B7;
+	}
+
+.Gorilla{
+	opacity: 30%;
+}
+
+.WordBox{
+	overflow: hidden;
+}
+
+.WordBox div{
+	display: inline-block;
+}
+
+.centerText{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+}
+
+.shakeonhover:hover{
+	animation: shakeThatShit .2s linear infinite;
+}
+
+.shakeAlways{
+	animation-name: Shakeit;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.shakeHarder{
+	animation-name: shakeThatShit;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.shakeHardest{
+	animation-name: shakeUltra;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.Gay{
+	animation-name: ColorChange;
+	animation-duration: 0.2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+.wiggleLR{
+	animation-name: WiggleLR;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+.wiggleUD{
+	animation-name: WiggleUD;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.wiggleSmaller{
+	animation-name: wiggleSmol;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.warbleSpace{
+	animation-name: Warble;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.ghostAni{
+	animation-name: Ghost;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+.doit div{
+	animation-name: ColorChange;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	display: inline-block;
+}
+.doit  div:nth-last-child(1n){
+	animation-delay: 0.1s;
+}
+.doit  div:nth-last-child(2n){
+	animation-delay: 0.2s;
+}
+.doit  div:nth-last-child(3n){
+	animation-delay: 0.3s;
+}
+.doit  div:nth-last-child(4n){
+	animation-delay: 0.4s;
+}
+.doit  div:nth-last-child(5n){
+	animation-delay: 0.5s;
+}
+.doit  div:nth-last-child(6n){
+	animation-delay: 0.6s;
+}
+.doit  div:nth-last-child(7n){
+	animation-delay: 0.7s;
+}
+.doit  div:nth-last-child(8n){
+	animation-delay: 0.8s;
+}
+.doit  div:nth-last-child(9n){
+	animation-delay: 0.9s;
+}
+.doit  div:nth-last-child(10n){
+	animation-delay: 1s;
+}
+.doit  div:nth-last-child(11n){
+	animation-delay: 1.1s;
+}
+.doit  div:nth-last-child(12n){
+	animation-delay: 1.2s;
+}
+.doit  div:nth-last-child(13n){
+	animation-delay: 1.3s;
+}
+.doit  div:nth-last-child(14n){
+	animation-delay: 1.4s;
+}
+.doit  div:nth-last-child(15n){
+	animation-delay: 1.5s;
+}
+.doit  div:nth-last-child(16n){
+	animation-delay: 1.6s;
+}
+.doit  div:nth-last-child(17n){
+	animation-delay: 1.7s;
+}
+.doit  div:nth-last-child(18n){
+	animation-delay: 1.8s;
+}
+
+.Worm div{
+	animation-name: WiggleUD;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	display: inline-block;
+}
+.Worm  div:nth-last-child(1n){
+	animation-delay: 0.1s;
+}
+.Worm  div:nth-last-child(2n){
+	animation-delay: 0.2s;
+}
+.Worm  div:nth-last-child(3n){
+	animation-delay: 0.3s;
+}
+.Worm  div:nth-last-child(4n){
+	animation-delay: 0.4s;
+}
+.Worm  div:nth-last-child(5n){
+	animation-delay: 0.5s;
+}
+.Worm  div:nth-last-child(6n){
+	animation-delay: 0.6s;
+}
+.Worm  div:nth-last-child(7n){
+	animation-delay: 0.7s;
+}
+.Worm  div:nth-last-child(8n){
+	animation-delay: 0.8s;
+}
+.Worm  div:nth-last-child(9n){
+	animation-delay: 0.9s;
+}
+.Worm  div:nth-last-child(10n){
+	animation-delay: 1s;
+}
+.Worm  div:nth-last-child(11n){
+	animation-delay: 1.1s;
+}
+.Worm  div:nth-last-child(12n){
+	animation-delay: 1.2s;
+}
+.Worm  div:nth-last-child(13n){
+	animation-delay: 1.3s;
+}
+
+
+
+@keyframes shakeThatShit{
+	0% { transform: translate(2px, 2px) rotate(1deg); }
+	10% { transform: translate(-2px, -3px) rotate(-2deg); }
+	20% { transform: translate(-4px, 1px) rotate(2deg); }
+	30% { transform: translate(4px, 3px) rotate(0deg); }
+	40% { transform: translate(2px, -2px) rotate(2deg); }
+	50% { transform: translate(-2px, 3px) rotate(-2deg); }
+	60% { transform: translate(-4px, 2px) rotate(0deg); }
+	70% { transform: translate(4px, 2px) rotate(-2deg); }
+	80% { transform: translate(-2px, -2px) rotate(2deg); }
+	90% { transform: translate(2px, 3px) rotate(0deg); }
+	100% { transform: translate(2px, -3px) rotate(-2deg); }
+}
+
+@keyframes Shakeit/*Softly*/{
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes WiggleLR{
+	0% { transform: translate(0px,0px);}
+	25% { transform: translate(3px,0px);}
+	75% {transform: translate(-3px,0px);}
+	100% { transform: translate(0px,0px);}
+}
+
+@keyframes wiggleSmol{
+	0% {transform: rotate(0deg)}
+	25% {transform: rotate(5deg)}
+	75% {transform: rotate(-5deg)}
+	100% {transform: rotate(0deg)}
+}
+
+@keyframes ColorChange{
+	0% {color: red;}
+	14% {color: orange;}
+	28% {color: yellow;}
+	42% {color: greenyellow;}
+	56% {color: deepskyblue;}
+	70% {color: indigo;}
+	84% {color: violet;}
+	100%{color: red;}
+}
+
+@keyframes WiggleUD{
+	0% { transform: translate(0px,0px);}
+	25% { transform: translate(0px,3px);}
+	75% {transform: translate(0px,-3px);}
+	100% { transform: translate(0px,0px);}
+}
+
+@keyframes Warble{
+	0% {background: linear-gradient(to right, #ff0000, #ffa600, #fff200, #00ffff, #0000ff, #ff00f2);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	14% {background: linear-gradient(to right, #ffa600, #fff200, #00ffff, #0000ff, #ff00f2, #ff0000);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	28% {background: linear-gradient(to right, #fff200, #00ffff, #0000ff, #ff00f2, #ff0000, #ffa600);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	42% {background: linear-gradient(to right, #00ffff, #0000ff, #ff00f2, #ff0000, #ffa600, #fff200);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	56% {background: linear-gradient(to right, #0000ff, #ff00f2, #ff0000, #ffa600, #fff200, #00ffff);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	70% {background: linear-gradient(to right, #ff00f2, #ff0000, #ffa600, #fff200, #00ffff, #0000ff);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	84% {background: linear-gradient(to right, #ff0000, #ffa600, #fff200, #00ffff, #0000ff, #ff00f2);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+	100% {background: linear-gradient(to right, #ff0000, #ffa600, #fff200, #00ffff, #0000ff, #ff00f2);-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
+}
+
+@keyframes Ghost{
+	0% {opacity: 100%}
+	25% {opacity: 50%}
+	50% {opacity: 0%}
+	75% {opacity: 50%}
+	100% {opacity: 100%}
+}
+
+@keyframes shakeUltra{
+	0% { transform: translate(4px, 4px) rotate(2deg); }
+	10% { transform: translate(-4px, -6px) rotate(-4deg); }
+	20% { transform: translate(-8px, 2px) rotate(4deg); }
+	30% { transform: translate(8px, 6px) rotate(0deg); }
+	40% { transform: translate(4px, -4px) rotate(4deg); }
+	50% { transform: translate(-4px, 6px) rotate(-4deg); }
+	60% { transform: translate(-8px, 4px) rotate(0deg); }
+	70% { transform: translate(8px, 4px) rotate(-4deg); }
+	80% { transform: translate(-4px, -4px) rotate(4deg); }
+	90% { transform: translate(4px, 6px) rotate(0deg); }
+	100% { transform: translate(4px, -6px) rotate(-4deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
